@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="Challenge">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="main.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body bgcolor="#9ECDD7">
+    <h2 align="center">The Visual Memory Game</h2>
+    <p align="center">This is a game for compute memorability score based on a crowdsorcing. </p>
+    <p align="center"><b>Instructions:</b> Press 'start' button. Many images will be displayed in the next 4:30 minutes. If you detect a second repetition of an image, press 'd'. When you finish the game, a text file will be download automatically to you computer, please attach this file to: <u>marc.carne.herrera@estudiant.upc.edu</u></p>
+    
+    <p align="center"><b>Please, be sure you are using "Chrome" browser. </b></p>
+    <br>
+    <div ng-controller="MainController" ng-keypress="tecla(event)" align="center">
+      <img id="img" ng-src="images_resize/{{image}}">
+		
+      <br>
+      <button ng-click="openFile()" >Start</button>
+      <button ng-click="killTimer()" >Stop</button>	
+    </div>
+
+  </body>
+  	
+</html>
