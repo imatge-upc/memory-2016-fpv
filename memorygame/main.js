@@ -82,7 +82,13 @@ angular.module('Challenge', [])
 		$scope.iter = 1;
 		
 		$scope.timer = $interval(function() {
-				
+			
+			if($scope.boolea==0){
+				$scope.image='blank.jpg';
+				$scope.boolea=1;
+			}
+			else {
+					
 		  	$scope.currentImageIndex++;
 			
 			//Stop this timer in 4:30 -> 250 images
@@ -239,6 +245,8 @@ angular.module('Challenge', [])
 						} //tanca while
 				}//tanca 119
 			}	//tanca 101	
+			$scope.boolea=0;
+			}
 			}, 1400);//tanca 76	
 	 }
 	 
