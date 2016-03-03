@@ -25,7 +25,8 @@ angular.module('Challenge', [])
 		$scope.num_vig = 0;
 		
 		var rawFileTargets = new XMLHttpRequest();    
-    	rawFileTargets.open("GET", "http://0.0.0.0:8000/Targets/targets_" + $scope.valor + ".txt", true);
+    	//rawFileTargets.open("GET", "http://0.0.0.0:8000/Targets/targets_" + $scope.valor + ".txt", true);
+		rawFileTargets.open("GET", "targets.txt", true);
    		rawFileTargets.onreadystatechange = function() {
       		if (rawFileTargets.readyState === 4) {
         		if (rawFileTargets.status === 200 || rawFileTargets.status == 0) {
@@ -52,7 +53,8 @@ angular.module('Challenge', [])
 		rawFileTargets.send(null);
 		
 		var rawFileFillers = new XMLHttpRequest();    
-    	rawFileFillers.open("GET", "http://0.0.0.0:8000/Fillers/fillers.txt", true);
+    	//rawFileFillers.open("GET", "http://0.0.0.0:8000/Fillers/fillers_" + $scope.valor + ".txt", true);
+		rawFileFillers.open("GET", "fillers/fillers.txt", true);
    		rawFileFillers.onreadystatechange = function() {
       		if (rawFileFillers.readyState === 4) {
         		if (rawFileFillers.status === 200 || rawFileFillers.status == 0) {
@@ -120,7 +122,7 @@ angular.module('Challenge', [])
 				
 				//Add statistics
 				$scope.main_control[$scope.main_control.length]=extra_line;
-				console.log(extra_line);
+				//console.log(extra_line);
 				
 				var blob = new Blob($scope.main_control, {
 					type: "text/plain;charset=utf-8"
@@ -168,7 +170,7 @@ angular.module('Challenge', [])
 			//Show fillers
 			if($scope.restF!=0){
 				$scope.random_frame = Math.floor(Math.random()*$scope.num_fillers);	 
-				console.log($scope.random_frame);
+				//console.log($scope.random_frame);
 				//console.log("filler " + $scope.fillers[$scope.random_frame]);	
 				//Fill the row of vigilance table
 				if($scope.restF==randomF && $scope.iter%2!=0){
