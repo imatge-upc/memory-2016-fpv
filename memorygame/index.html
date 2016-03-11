@@ -11,13 +11,13 @@
   <body bgcolor="#9ECDD7">
     <h2 align="center">The Visual Memory Game</h2>
     <p align="center">This is a game for compute memorability score based on a crowdsorcing. </p>
-    <p align="center"><b>Instructions:</b> After enter the exercice assigned (between 1 and 5) press 'start' button. Many images will be displayed in the next 4:30 minutes. If you detect a second repetition of an image, press 'd'. When you finish the game, a text file will be download automatically to you computer, please attach this file to: <u>marc.carne.herrera@estudiant.upc.edu</u></p>
+    <p align="center"><b>Instructions:</b> When press 'start' button, many images will be displayed in the next 9 minutes. If you detect a second repetition of an image, press 'd'. When you finish the game, a text file will be download automatically to you computer, please attach this file to: <u>marc.carne.herrera@estudiant.upc.edu</u></p>
     
     <p align="center"><b>Please, be sure you are using "Chrome" browser. </b></p>
     
     <br>
     <div ng-controller="MainController" ng-keypress="tecla(event)" align="center">
-      <img id="img" ng-src="images_game/{{image}}">
+      <img id="img" ng-src="images/{{image}}">
 		
       <br>
       <button ng-click="openFile()" >Start</button>
