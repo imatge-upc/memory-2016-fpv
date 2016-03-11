@@ -12,6 +12,7 @@ RUN apt-get install -y git-core
 #Get githib repository
 WORKDIR /src
 RUN git clone https://github.com/imatge-upc/lifelogging.git
+ADD images /src/lifelogging/memorygame/images
 WORKDIR lifelogging/memorygame
 
 #You have to copy the images in the  directory
