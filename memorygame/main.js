@@ -13,7 +13,7 @@ angular.module('Challenge', [])
 	 
 	 $scope.openFile = function() {
 		
-		$scope.valor = document.getElementById("opcio").value;
+		//$scope.valor = document.getElementById("opcio").value;
 		
 		//console.log($scope.valor);
 		//Array for detected images
@@ -54,7 +54,7 @@ angular.module('Challenge', [])
 		
 		var rawFileFillers = new XMLHttpRequest();    
     	//rawFileFillers.open("GET", "http://0.0.0.0:8000/Fillers/fillers_" + $scope.valor + ".txt", true);
-		rawFileFillers.open("GET", "fillers/fillers.txt", true);
+		rawFileFillers.open("GET", "fillers.txt", true);
    		rawFileFillers.onreadystatechange = function() {
       		if (rawFileFillers.readyState === 4) {
         		if (rawFileFillers.status === 200 || rawFileFillers.status == 0) {
@@ -92,7 +92,7 @@ angular.module('Challenge', [])
 		  	$scope.currentImageIndex++;
 			
 			//Stop this timer in 4:30 -> 250 images
-			if($scope.currentImageIndex==200){
+			if($scope.currentImageIndex==220){
 				$interval.cancel($scope.timer);
 				$scope.timer = undefined;
 				console.log('Timer has been stopped');
@@ -161,12 +161,12 @@ angular.module('Challenge', [])
 					aux_day=0;
 				}else{aux_day=""}
 				
-				saveAs(blob, "results_targets_"+$scope.valor+"_"+year+aux_month+month+aux_day+day+"_"+aux_hour+hour+aux_minute+minute+aux_second+second+".txt" );
+				saveAs(blob, "results_targets_"+year+aux_month+month+aux_day+day+"_"+aux_hour+hour+aux_minute+minute+aux_second+second+".txt" );
 				console.log("Saved!");
 			} 
 			
 			if($scope.busy==0){
-				var randomF = Math.floor(Math.random()*4);
+				var randomF = Math.floor(Math.random()*3);
 				$scope.restF=randomF;
 				$scope.busy=1;
 			}else{
@@ -181,6 +181,7 @@ angular.module('Challenge', [])
 				//Fill the row of vigilance table
 				if($scope.restF==randomF && $scope.iter%2!=0){
 					$scope.image=$scope.fillers[$scope.random_frame];
+					$scope.filler_trig=[];
 					$scope.filler_trig[0]=$scope.image;
 					$scope.filler_trig[1]=0; //Detection
 					$scope.main_vigilance[$scope.num_vig]=$scope.filler_trig;
@@ -247,7 +248,7 @@ angular.module('Challenge', [])
 			}	//tanca 101	
 			$scope.boolea=0;
 			}
-			}, 1400);//tanca 76	
+			}, 1200);//tanca 76	
 	 }
 	 
 	 $scope.killTimer = function() {
@@ -330,7 +331,7 @@ angular.module('Challenge', [])
 		if(window.event){
 			keyCode=window.event.keyCode;
 			if(keyCode==100){
-				console.log("Pressed 'd' !");
+				console.log("Pressed 'd' !" + $scope.image);
 				//Quan hem pulsat la tecla d
 				$scope.detection=$scope.image;
 				
@@ -348,6 +349,7 @@ angular.module('Challenge', [])
 					}
 				}
 				
+				found=0;
 				while(found==0 && vigilance_len<$scope.main_vigilance.length){
 					if($scope.main_vigilance[vigilance_len][0]==$scope.detection){
 						$scope.main_vigilance[vigilance_len][1]=1; //Detected
@@ -356,6 +358,7 @@ angular.module('Challenge', [])
 					else{
 						vigilance_len++;
 					}
+					console.log($scope.main_vigilance);
 				} 
 					
 			}
