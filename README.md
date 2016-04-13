@@ -66,7 +66,7 @@ Acceptation pendent.
 ![Memorability scores](./figs/comparative_3.jpg)
 
 ## Visual Memory game
-The visual memory game for annotation proposed in this work is online available [here](http://imatge.upc.edu:8000).
+The visual memory game for annotation proposed in this work is online available [here](http://imatge.upc.edu:8000). It is important to open the game in a CHROME browser.
 
 ## Training
 As explained in our paper, our networks were trained on the training and validation data provided by Insight dataset, created in this work.
