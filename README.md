@@ -65,30 +65,6 @@ This training data has been used to fine-tune a pre-trained convolutional neural
 ## Publication
 
 Acceptation pendent.
-```
-An [arXiv pre-print](http://arxiv.org/abs/1603.00845) is already available.
-
-![Image of the paper](./figs/paper.jpg)
-
-Please cite with the following Bibtex code:
-
-
-@article{pan2016shallow,
-  title={Shallow and Deep Convolutional Networks for Saliency Prediction},
-  author={Pan, Junting and McGuinness, Kevin and Sayrol, Elisa and O'Connor, Noel and Giro-i-Nieto, Xavier},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-  year={2016}
-}
-
-
-You may also want to refer to our publication with the more human-friendly Chicago style:
-
-*Junting Pan, Kevin McGuinness, Elisa Sayrol, Noel O'Connor, and Xavier Giro-i-Nieto. "Shallow and Deep Convolutional Networks for Saliency Prediction." In Proceedings of the IEEE International Conference on Computer Vision. 2016.*
-```
-```## Models
-
-The convnet EgoMemNet presented in our work can be downloaded from the links provided below each respective figure:
-```
 
 ## Visual Results
 
