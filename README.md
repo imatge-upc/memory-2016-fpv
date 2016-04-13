@@ -36,7 +36,7 @@ A joint collaboration between:
 [logo-insight]: ./logos/insight.jpg "Insight Centre for Data Analytics"
 [logo-dcu]: ./logos/dcu.png "Dublin City University"
 [logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya"
-[logo-ub]: ./logos/ub.png "ETSETB TelecomBCN"
+[logo-ub]: ./logos/ub.jpg "Universitat de Barcelona"
 
 Acknowledgements:
 
