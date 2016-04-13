@@ -1,10 +1,5 @@
 # EgoMemNet: Visual Memorability Adaptation to Egocentric Images
 
-``|  ![CVPR 2016 logo][logo-cvpr] | Paper accepted at [2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)](http://cvpr2016.thecvf.com/)   |
-|:-:|---|
-
-[logo-cvpr]: ./logos/cvpr2016.jpg "CVPR 2016 logo"``
-
 | ![Marc Carné][MarcCarne-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]   | ![Petia Radeva][PetiaRadeva-photo]  | ![CathalGurrin][CathalGurrin-photo]  |
 |:-:|:-:|:-:|:-:|:-:|
 | Marc Carne  | [Xavier Giro-i-Nieto][XavierGiro-web]   | [Petia Radeva][PetiaRadeva-web] | [Cathal Gurrin][CathalGurrin-web]   |
@@ -70,40 +65,25 @@ Acceptation pendent.
 
 ![Memorability scores](./figs/comparative_3.jpg)
 
-
 ## Datasets
 
 ### Training
 As explained in our paper, our networks were trained on the training and validation data provided by Insight dataset, created in this work.
 
-### Test
-Three different dataset were used for test:
-* Test partition of [SALICON](http://salicon.net/) dataset.
-* Test partition of [iSUN](http://vision.princeton.edu/projects/2014/iSUN/) dataset.
-* [MIT300](http://saliency.mit.edu/datasets.html).
+### Fine-tune
+Three different strategies used in data augmentation to avoid overfitting during fine-tunning:
+* No augmentation.
+* Spatial data augmentation (SDA), 10 transformations per image: cetral crop, four corners and their correspondent x-axis flips.
+* Temporal data augmentation (TDA), similar temporal neighbours.
 
-A collection of links to the SALICON and iSUN datasets is available from the [LSUN Challenge site](http://lsun.cs.princeton.edu/#saliency).
 
 ## Software frameworks
 
-Our paper presents two different convolutional neural networks trained with different frameworks. For this reason, different instructions and source code folders are provided.
-
-### Shallow Network on Lasagne
-
-The shallow network is implemented in [Lasagne](https://github.com/Lasagne/Lasagne), which at its time is developed over [Theano](http://deeplearning.net/software/theano/).
-To install required version of Lasagne and all the remaining dependencies, you should run this [pip](https://pip.pypa.io/en/stable/) command.
-
-```
-pip install -r https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/shallow/requirements.txt
-```
-
-This requirements file was provided by [Daniel Nouri](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/).
-
-### Deep Network on Caffe
+Our paper presents two different convolutional neural networks trained with Caffe framework.
 
 The deep network was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
 
-## Acknowledgements
+## Technical acknowledgements
 
 We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.
 
@@ -117,21 +97,9 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [AlbertGil-web]: https://imatge.upc.edu/web/people/albert-gil-moreno
 [JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal
 
-|   |   |
-|:--|:-:|
-|  We gratefully acknowledge the support of [NVIDIA Corporation](http://www.nvidia.com/content/global/global.php) with the donation of the GeoForce GTX [Titan Z](http://www.nvidia.com/gtx-700-graphics-cards/gtx-titan-z/) and [Titan X](http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x) used in this work. |  ![logo-nvidia] |
-|  The Image ProcessingGroup at the UPC is a [SGR14 Consolidated Research Group](https://imatge.upc.edu/web/projects/sgr14-image-and-video-processing-group) recognized and sponsored by the Catalan Government (Generalitat de Catalunya) through its [AGAUR](http://agaur.gencat.cat/en/inici/index.html) office. |  ![logo-catalonia] |
-|  This work has been developed in the framework of the project [BigGraph TEC2013-43935-R](https://imatge.upc.edu/web/projects/biggraph-heterogeneous-information-and-graph-signal-processing-big-data-era-application), funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).  | ![logo-spain] |
-|  This publication has emanated from research conducted with the financial support of Science Foundation Ireland (SFI) under grant number SFI/12/RC/2289. |  ![logo-ireland] |
-
-[logo-nvidia]: ./logos/nvidia.jpg "Logo of NVidia"
-[logo-catalonia]: ./logos/generalitat.jpg "Logo of Catalan government"
-[logo-spain]: ./logos/MEyC.png "Logo of Spanish government"
-[logo-ireland]: ./logos/sfi.png "Logo of Science Foundation Ireland"
-
 ## Contact
 
-If you have any general doubt about our work or code which may be of interest for other researchers, please use the [public issues section](https://github.com/imatge-upc/saliency-2016-cvpr/issues) on this github repo. Alternatively, drop us an e-mail at <mailto:xavier.giro@upc.edu>.
+If you have any general doubt about our work or code which may be of interest for other researchers, please drop us an e-mail at <mailto:marc.carne.herrera@estudiant.upc.edu> or <mailto:xavier.giro@upc.edu>.
 
 <!---
 Javascript code to enable Google Analytics
