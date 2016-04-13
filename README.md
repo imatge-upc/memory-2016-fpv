@@ -65,12 +65,13 @@ Acceptation pendent.
 
 ![Memorability scores](./figs/comparative_3.jpg)
 
-## Datasets
+## Visual Memory game
+The visual memory game for annotation proposed in this work is online available [here](http://imatge.upc.edu:8000).
 
-### Training
+## Training
 As explained in our paper, our networks were trained on the training and validation data provided by Insight dataset, created in this work.
 
-### Fine-tune
+## Fine-tune
 Three different strategies used in data augmentation to avoid overfitting during fine-tunning:
 * No augmentation.
 * Spatial data augmentation (SDA), 10 transformations per image: cetral crop, four corners and their correspondent x-axis flips.
