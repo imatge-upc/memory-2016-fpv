@@ -1,9 +1,9 @@
 # EgoMemNet: Visual Memorability Adaptation to Egocentric Images
 
-|  ![CVPR 2016 logo][logo-cvpr] | Paper accepted at [2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)](http://cvpr2016.thecvf.com/)   |
+``|  ![CVPR 2016 logo][logo-cvpr] | Paper accepted at [2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)](http://cvpr2016.thecvf.com/)   |
 |:-:|---|
 
-[logo-cvpr]: ./logos/cvpr2016.jpg "CVPR 2016 logo"
+[logo-cvpr]: ./logos/cvpr2016.jpg "CVPR 2016 logo"``
 
 | ![Marc Carné][MarcCarne-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]   | ![Petia Radeva][PetiaRadeva-photo]  | ![CathalGurrin][CathalGurrin-photo]  |
 |:-:|:-:|:-:|:-:|:-:|
