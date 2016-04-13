@@ -5,7 +5,7 @@
 
 [logo-cvpr]: ./logos/cvpr2016.jpg "CVPR 2016 logo"
 
-| ![Marc Carne][MarcCarne-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]   | ![Petia Radeva][PetiaRadeva-photo]  | ![CathalGurrin][CathalGurrin-photo]  |
+| ![Marc Carné][MarcCarne-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]   | ![Petia Radeva][PetiaRadeva-photo]  | ![CathalGurrin][CathalGurrin-photo]  |
 |:-:|:-:|:-:|:-:|:-:|
 | Marc Carne  | [Xavier Giro-i-Nieto][XavierGiro-web]   | [Petia Radeva][PetiaRadeva-web] | [Cathal Gurrin][CathalGurrin-web]   |
 
@@ -17,7 +17,7 @@
 
 [MarcCarne-photo]: ./authors/MarcCarne.jpg "Marc Carné"
 [PetiaRadeva-photo]: ./authors/PetiaRadeva.jpg "Petia Radeva"
-[CathalGurrin-photo]: ./authors/CathalGurrin.jpg "Noel O'Connor"
+[CathalGurrin-photo]: ./authors/CathalGurrin.jpg "Cathal Gurrin"
 [XavierGiro-photo]: ./authors/XavierGiro.jpg "Xavier Giro-i-Nieto"
 
 A joint collaboration between:
@@ -37,6 +37,21 @@ A joint collaboration between:
 [logo-dcu]: ./logos/dcu.png "Dublin City University"
 [logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya"
 [logo-ub]: ./logos/ub.png "ETSETB TelecomBCN"
+
+Acknowledgements:
+
+| ![logo-ajterrassa] | ![logo-erasmus] | ![logo-cst] |
+|:-:|:-:|:-:|
+| [Ajuntament de Terrassa][ajterrassa-web] | [Erasmus +][erasmus-web]  |[Consorci Sanitari de Terrassa (CST)][cst-web]   |
+
+[ajterrassa-web]: https://www.terrassa.cat
+[erasmus-web]: http://www.oapee.es/oapee/inicio/ErasmusPlus.html
+[cst-web]: http://www.cst.cat
+
+[logo-ajterrassa]: ./logos/ajterrassa.jpg "Ajuntament de Terrassa"
+[logo-erasmus]: ./logos/erasmus.png "Erasmus +"
+[logo-cst]: ./logos/cst.jpg "Consorci Sanitari de Terrassa"
+
 
 
 ## Abstract
