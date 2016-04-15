@@ -4,8 +4,6 @@
 |:-:|:-:|:-:|:-:|:-:|
 | Marc Carné  | [Xavier Giro-i-Nieto][XavierGiro-web]   | [Petia Radeva][PetiaRadeva-web] | [Cathal Gurrin][CathalGurrin-web]   |
 
-
-
 [CathalGurrin-web]: https://www.insight-centre.org/users/cathal-gurrin
 [PetiaRadeva-web]: http://www.cvc.uab.es/~petia/
 [XavierGiro-web]: https://imatge.upc.edu/web/people/xavier-giro
@@ -27,25 +25,12 @@ A joint collaboration between:
 [ub-web]: http://www.ub.edu/web/ub/en/
 [gpi-web]: https://imatge.upc.edu/web/
 
-
 [logo-insight]: ./logos/insight.jpg "Insight Centre for Data Analytics"
 [logo-dcu]: ./logos/dcu.png "Dublin City University"
 [logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya"
 [logo-ub]: ./logos/ub.jpg "Universitat de Barcelona"
 
-Acknowledgements:
 
-| ![logo-ajterrassa] | ![logo-erasmus] | ![logo-cst] |
-|:-:|:-:|:-:|
-| [Ajuntament de Terrassa][ajterrassa-web] | [Erasmus +][erasmus-web]  |[Consorci Sanitari de Terrassa (CST)][cst-web]   |
-
-[ajterrassa-web]: https://www.terrassa.cat
-[erasmus-web]: http://www.oapee.es/oapee/inicio/ErasmusPlus.html
-[cst-web]: http://www.cst.cat
-
-[logo-ajterrassa]: ./logos/ajterrassa.jpg "Ajuntament de Terrassa"
-[logo-erasmus]: ./logos/erasmus.jpg "Erasmus +"
-[logo-cst]: ./logos/cst.jpg "Consorci Sanitari de Terrassa"
 
 
 
@@ -59,7 +44,7 @@ This training data has been used to fine-tune a pre-trained convolutional neural
 
 ## Publication
 
-Acceptation pendent.
+Acceptance pending.
 
 ## Visual Results
 
@@ -74,11 +59,10 @@ The visual memory game for annotation proposed in this work is online available 
 * Output: text file, downloaded in the client machine (downloads local folder).
 
 ### Game Technical Features
+
 This game has been inspired in the game from MIT to replicate the results, because the code for the game are not available.
 In that game there are two types of images: the first one are images that we want to detect and annotate, called targets. The second type are the fillers, images that goes between targets. Some of these fillers are vigilance fillers, randomly selected, but them function is to control that user are doing the work well.
 Targets can only appear twice and fillers have no limit of shows.
-
-
 
 The repetition of targets are between 8 and 40 images (without count blank frame, and the images between the repetition can be other targets or fillers). The sequence of images also has a blank frame with the function of focusing user attention in the center of the image. This attention frame contains a small black square at the center of a white background.
 Between targets, fillers are added and the number of these fillers is between 0 and 3 randomly selected.
@@ -106,14 +90,15 @@ Three different strategies used in data augmentation to avoid overfitting during
 * Spatial data augmentation (SDA), 10 transformations per image: cetral crop, four corners and their correspondent x-axis flips.
 * Temporal data augmentation (TDA), similar temporal neighbours.
 
+## EgoMemNet
 
-## Software frameworks
+You can download our best result, EgoMemNet, from [here](https://imatge.upc.edu/web/sites/default/files/projects/1634/public/egocentric/2016-egomemnet/EgoMemNet.caffemodel).
 
-Our paper presents two different convolutional neural networks trained with Caffe framework.
+## Software framework
 
-The deep network was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
+The presented convolutional neural network was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
 
-## Technical acknowledgements
+## Technical support
 
 We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.
 
@@ -127,22 +112,22 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [AlbertGil-web]: https://imatge.upc.edu/web/people/albert-gil-moreno
 [JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal
 
+## Acknowledgements
+
+| ![logo-ajterrassa] | ![logo-erasmus] | ![logo-cst] |
+|:-:|:-:|:-:|
+| [Ajuntament de Terrassa][ajterrassa-web] | [Erasmus +][erasmus-web]  |[Consorci Sanitari de Terrassa (CST)][cst-web]   |
+
+[ajterrassa-web]: https://www.terrassa.cat
+[erasmus-web]: http://www.oapee.es/oapee/inicio/ErasmusPlus.html
+[cst-web]: http://www.cst.cat
+
+[logo-ajterrassa]: ./logos/ajterrassa.jpg "Ajuntament de Terrassa"
+[logo-erasmus]: ./logos/erasmus.jpg "Erasmus +"
+[logo-cst]: ./logos/cst.jpg "Consorci Sanitari de Terrassa"
+
 ## Contact
 
 If you have any general doubt about our work or code which may be of interest for other researchers, please drop us an e-mail at <mailto:marc.carne.herrera@estudiant.upc.edu> or <mailto:xavier.giro@upc.edu>.
 
-<!---
-Javascript code to enable Google Analytics
--->
 
-<script>
-
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-7678045-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
