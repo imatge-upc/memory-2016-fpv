@@ -46,9 +46,20 @@ This training data has been used to fine-tune a pre-trained convolutional neural
 
 Acceptance pending.
 
-## Visual Results
+## Qualitative Results
 
 ![Memorability scores](./figs/comparative_3.jpg)
+
+## EgoMemNet
+
+You can download our best model, EgoMemNet, from [here](https://imatge.upc.edu/web/sites/default/files/projects/1634/public/egocentric/2016-egomemnet/EgoMemNet.caffemodel).
+
+As explained in our paper, our networks were trained on the training and validation data provided by Insight dataset, created for this work.Three different strategies used in data augmentation to avoid overfitting during fine-tunning:
+* No augmentation.
+* Spatial data augmentation (SDA), 10 transformations per image: cetral crop, four corners and their correspondent x-axis flips.
+* Temporal data augmentation (TDA), similar temporal neighbours.
+
+The provided model was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
 
 ## Visual Memory game
 The visual memory game for annotation proposed in this work is online available [here](http://imatge.upc.edu:8000). It is important to open the game in a CHROME browser.
@@ -81,22 +92,7 @@ This dataset was built from a uniform sampling from a lifelogging record of 25 d
 The UTEgocentric dataset (Grauman et al.) contains 4 videos from head-mounted cameras, each about 3-5 hours long, captured in a very uncontrolled setting.
 The videos were sampled, extracting frames at a fixed interval of time, in this case every 30 seconds, to simulate the capture by an low sampling rate camera. The appearance of these frames is similar to the Anonymous dataset, in this way, we can help to reduce the probability that any filler image is similar to a target images, yet retaining the egocentric-nature of the images. The number of filler images is 540, much higher than the number of targets in order to achieve a non-repetition of fillers and focus user attention to targets.
 
-## Training
-As explained in our paper, our networks were trained on the training and validation data provided by Insight dataset, created in this work.
 
-## Fine-tune
-Three different strategies used in data augmentation to avoid overfitting during fine-tunning:
-* No augmentation.
-* Spatial data augmentation (SDA), 10 transformations per image: cetral crop, four corners and their correspondent x-axis flips.
-* Temporal data augmentation (TDA), similar temporal neighbours.
-
-## EgoMemNet
-
-You can download our best result, EgoMemNet, from [here](https://imatge.upc.edu/web/sites/default/files/projects/1634/public/egocentric/2016-egomemnet/EgoMemNet.caffemodel).
-
-## Software framework
-
-The presented convolutional neural network was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
 
 ## Technical support
 
