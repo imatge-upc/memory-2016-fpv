@@ -1,15 +1,13 @@
 # EgoMemNet: Visual Memorability Adaptation to Egocentric Images
 
-| ![Marc Carné][MarcCarne-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]   | ![Petia Radeva][PetiaRadeva-photo]  | ![CathalGurrin][CathalGurrin-photo]  |
+| ![Marc Carné][MarcCarne-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]   | ![CathalGurrin][CathalGurrin-photo]  |
 |:-:|:-:|:-:|:-:|:-:|
-| Marc Carné  | [Xavier Giro-i-Nieto][XavierGiro-web]   | [Petia Radeva][PetiaRadeva-web] | [Cathal Gurrin][CathalGurrin-web]   |
+| Marc Carné  | [Xavier Giro-i-Nieto][XavierGiro-web]   | [Cathal Gurrin][CathalGurrin-web]   |
 
 [CathalGurrin-web]: https://www.insight-centre.org/users/cathal-gurrin
-[PetiaRadeva-web]: http://www.cvc.uab.es/~petia/
 [XavierGiro-web]: https://imatge.upc.edu/web/people/xavier-giro
 
 [MarcCarne-photo]: ./authors/MarcCarne.jpg "Marc Carné"
-[PetiaRadeva-photo]: ./authors/PetiaRadeva.jpg "Petia Radeva"
 [CathalGurrin-photo]: ./authors/CathalGurrin.jpg "Cathal Gurrin"
 [XavierGiro-photo]: ./authors/XavierGiro.jpg "Xavier Giro-i-Nieto"
 
@@ -17,18 +15,16 @@ A joint collaboration between:
 
 | ![logo-insight] | ![logo-dcu] | ![logo-upc] | ![logo-ub] |
 |:-:|:-:|:-:|:-:|
-| [Insight Centre for Data Analytics][insight-web] | [Dublin City University (DCU)][dcu-web]  |[Universitat Politecnica de Catalunya (UPC)][upc-web]   | [Universitat de Barcelona (UB)][ub-web]  |
+| [Insight Centre for Data Analytics][insight-web] | [Dublin City University (DCU)][dcu-web]  |[Universitat Politecnica de Catalunya (UPC)][upc-web]   | 
 
 [insight-web]: https://www.insight-centre.org/
 [dcu-web]: http://www.dcu.ie/
 [upc-web]: http://www.upc.edu/?set_language=en
-[ub-web]: http://www.ub.edu/web/ub/en/
 [gpi-web]: https://imatge.upc.edu/web/
 
 [logo-insight]: ./logos/insight.jpg "Insight Centre for Data Analytics"
 [logo-dcu]: ./logos/dcu.png "Dublin City University"
 [logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya"
-[logo-ub]: ./logos/ub.jpg "Universitat de Barcelona"
 
 
 
