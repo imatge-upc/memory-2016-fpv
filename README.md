@@ -13,7 +13,7 @@
 
 A joint collaboration between:
 
-| ![logo-insight] | ![logo-dcu] | ![logo-upc] | ![logo-ub] |
+| ![logo-insight] | ![logo-dcu] | ![logo-upc] | 
 |:-:|:-:|:-:|:-:|
 | [Insight Centre for Data Analytics][insight-web] | [Dublin City University (DCU)][dcu-web]  |[Universitat Politecnica de Catalunya (UPC)][upc-web]   | 
 
