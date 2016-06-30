@@ -7,9 +7,9 @@
 [CathalGurrin-web]: https://www.insight-centre.org/users/cathal-gurrin
 [XavierGiro-web]: https://imatge.upc.edu/web/people/xavier-giro
 
-[MarcCarne-photo]: ./authors/MarcCarne.jpg "Marc Carné"
-[CathalGurrin-photo]: ./authors/CathalGurrin.jpg "Cathal Gurrin"
-[XavierGiro-photo]: ./authors/XavierGiro.jpg "Xavier Giro-i-Nieto"
+[MarcCarne-photo]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/authors/MarcCarne.jpg "Marc Carné"
+[CathalGurrin-photo]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/authors/CathalGurrin.jpg "Cathal Gurrin"
+[XavierGiro-photo]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/authors/XavierGiro.jpg "Xavier Giro-i-Nieto"
 
 A joint collaboration between:
 
@@ -22,9 +22,9 @@ A joint collaboration between:
 [upc-web]: http://www.upc.edu/?set_language=en
 [gpi-web]: https://imatge.upc.edu/web/
 
-[logo-insight]: ./logos/insight.jpg "Insight Centre for Data Analytics"
-[logo-dcu]: ./logos/dcu.png "Dublin City University"
-[logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya"
+[logo-insight]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/logos/insight.jpg "Insight Centre for Data Analytics"
+[logo-dcu]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/logos/dcu.png "Dublin City University"
+[logo-upc]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/logos/upc.jpg "Universitat Politecnica de Catalunya"
 
 
 
@@ -44,7 +44,7 @@ Acceptance pending.
 
 ## Qualitative Results
 
-![Memorability scores](./figs/comparative_3.jpg)
+![Memorability scores](https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/figs/comparative_3.jpg)
 
 ## EgoMemNet
 
@@ -98,8 +98,8 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 |:-:|:-:|
 | [Albert Gil](AlbertGil-web)  |  [Josep Pujal](JosepPujal-web) |
 
-[AlbertGil-photo]: ./authors/AlbertGil.jpg "Albert Gil"
-[JosepPujal-photo]: ./authors/JosepPujal.jpg "Josep Pujal"
+[AlbertGil-photo]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/authors/AlbertGil.jpg "Albert Gil"
+[JosepPujal-photo]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/authors/JosepPujal.jpg "Josep Pujal"
 
 [AlbertGil-web]: https://imatge.upc.edu/web/people/albert-gil-moreno
 [JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal
@@ -114,9 +114,9 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [erasmus-web]: http://www.oapee.es/oapee/inicio/ErasmusPlus.html
 [cst-web]: http://www.cst.cat
 
-[logo-ajterrassa]: ./logos/ajterrassa.jpg "Ajuntament de Terrassa"
-[logo-erasmus]: ./logos/erasmus.jpg "Erasmus +"
-[logo-cst]: ./logos/cst.jpg "Consorci Sanitari de Terrassa"
+[logo-ajterrassa]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/logos/ajterrassa.jpg "Ajuntament de Terrassa"
+[logo-erasmus]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/logos/erasmus.jpg "Erasmus +"
+[logo-cst]: https://raw.githubusercontent.com/imatge-upc/memory-2016-fpv/master/logos/cst.jpg "Consorci Sanitari de Terrassa"
 
 ## Contact
 
